@@ -15,6 +15,7 @@
     <meta property="og:type" content="article">
     <meta property="og:image" content="img/first-screen.jpg">
     <meta property="og:site_name" content="Colorful Flat">
+
     <!-- Styles -->
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Bootstrap/bootstrap-grid.min.css"/>
@@ -24,6 +25,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick-theme.css"/>
     <!-- Animate -->
     <!--<link rel="stylesheet" type="text/css" href="css/animate.css"/>-->
     <!-- Main styles -->
@@ -31,15 +33,536 @@
     <!--<link rel="stylesheet" href="css/media.css">-->
 </head>
 <body>
-    <head class="head">
-        <div class="video-bck">
-            <video autoplay muted loop>
-                <source src="./assets/images/video-bg.mp4" type="video/mp4">
-            </video>
-        </div>
+    <!-- Header start -->
+    <div class="header fixed top">
         <div class="container-fluid">
-            <div class="row"></div>
+            <div class="row">
+                <div class="header__navbar d-flex justify-content-between align-items-center ">
+                    <div class="header__logo">
+                        <span class="black-font">colorful</span>
+                        <span class="light-font"> flat</span>
+                    </div>
+                    <ul class="header__nav d-flex align-items-center">
+                        <li>
+                            <a class="active" href="#home">Home</a>
+                        </li>
+                        <li class="link__open">
+                            <a href="#about">About</a>
+                            <i class="material-icons-keyboard_arrow_down"></i>
+                        </li>
+                        <li>
+                            <a href="#team">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#partners">Partners</a>
+                        </li>
+                    </ul>
+                    <button class="header__mobile-btn align-items-center" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="header__mobile-nav align-items-center">
+                        <li>
+                            <a class="active" href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#team">Our Team</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#partners">Partners</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </head>
+    </div>
+    <!-- Header end -->
+
+    <!-- Main start -->
+    <main>
+        <!-- Home star -->
+        <div class="home" id="home">
+            <div class="video-bck">
+                <video autoplay muted loop>
+                    <source src="./assets/images/video-bg.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="home__content">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="home__title">
+                            <span>The best open page template  for</span>
+                            <h2>Web Professionals</h2>
+                        </div>
+                        <div class="home__form">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Full name">
+                                    <input class="form-control" type="text" placeholder="E-mail">
+                                    <input class="form-control" type="text" placeholder="Phone">
+                                </div>
+                                <button class="btn btn-primary" type="submit">Get started now!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Home end -->
+        <!-- About start -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-1 text-center">
+                            <h3>About Us</h3>
+                            <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <i class="material-icons-comment"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Exclusive Shortcodes</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <i class="material-icons-verified_user"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>100% valid and clean code</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <i class="material-icons-autorenew"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Free Lifetime Updates</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <i class="material-icons-headset_mic"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>24/7/365 Customer Support</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About end -->
+
+        <!-- Features start -->
+        <section class="section features" id="features">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-1 text-center">
+                            <h3>Features</h3>
+                            <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex flex-column">
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="inner__item">
+                                <div class="inner__icon">
+                                    <i class="material-icons-tune"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Instant Skins Switcher</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="inner__item">
+                                <div class="inner__icon">
+                                    <i class="material-icons-dvr"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Various Scripts Included</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Various Scripts are already on a board. Use Owl Carousel, Tabs etc. for your needs</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6">
+                            <div class="inner__item">
+                                <div class="inner__icon">
+                                    <i class="material-icons-devices"></i>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Fully Responsive Design</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Product is tested on the common devices. It will render and scale on any possible screen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features__picture d-none d-md-block">
+                        <div class="feature__rectangles d-flex">
+                            <div class="rectangles rectangles__red d-none d-lg-block"></div>
+                            <div class="rectangles rectangles__blue d-none d-lg-block"></div>
+                            <img class="features__image" src="./assets/images/features-man.png" alt="feature image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features end -->
+
+        <!-- Advantages start -->
+        <section class="advantages section" id="advantages">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-1 text-center">
+                            <h3>Advantagess</h3>
+                            <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>1.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Cu tantas platonem</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>2.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Aperiam suscipiantur</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>3.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Nusquam facilisis</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>4.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Ex vel legimus</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>5.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Nusquam facilisis</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>6.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Ex vel legimus</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>7.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Aperiam suscipiantur</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item">
+                                <div class="inner__icon icon__circle">
+                                    <span>8.</span>
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Cu tantas platonem</h4>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est./p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Advantages end -->
+
+        <!-- Testimonials start -->
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-1 text-center">
+                            <h3>Testimonials</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-8 offset-2">
+                            <div class="slider testimonials__slider">
+                                <div class="inner__item d-flex flex-column align-items-center">
+                                    <div class="testimonials__icon d-none d-lg-block">
+                                        <img src="./assets/images/testimonials-icon.png" alt="Quotes">
+                                    </div>
+                                    <p class="inner__text">
+                                        Vis quaeque inermis atomorum cu. Aperiam suscipiantur at pro. Nec paulo essent hendrerit ut, mel cu oblique eripuit maiestatis.
+                                    </p>
+                                    <div class="testimonials__picture">
+                                        <img src="./assets/images/RobSinger.png" alt="Rob Singer">
+                                    </div>
+                                    <p class="inner__title">
+                                        Rob Singer, Web Developer
+                                    </p>
+                                </div>
+                                <div class="inner__item d-flex flex-column align-items-center">
+                                    <div class="testimonials__icon d-none d-lg-block">
+                                        <img src="./assets/images/testimonials-icon.png" alt="Quotes">
+                                    </div>
+                                    <p class="inner__text">
+                                        Vis quaeque inermis atomorum cu. Aperiam suscipiantur at pro. Nec paulo essent hendrerit ut, mel cu oblique eripuit maiestatis.
+                                    </p>
+                                    <div class="testimonials__picture">
+                                        <img src="./assets/images/AlanJohnson.png" alt="Alan Johnson">
+                                    </div>
+                                    <p class="inner__title">
+                                        Alan Johnson, SEO
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials end -->
+
+        <!-- Features start -->
+        <section class="section team" id="team">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-1 text-center">
+                            <h3>Our Team</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item flex-column">
+                                <div class="inner__img">
+                                    <img src="./assets/images/team-01.png" alt="Alan Sobakovich">
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Alan Sobakovich</h4>
+                                    </div>
+                                    <div class="inner__subtitle">
+                                        <span>Founder</span>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item flex-column">
+                                <div class="inner__img">
+                                    <img src="./assets/images/team-02.png" alt="John Mu">
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>John Mu</h4>
+                                    </div>
+                                    <div class="inner__subtitle">
+                                        <span>Product Manager</span>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item flex-column">
+                                <div class="inner__img">
+                                    <img src="./assets/images/team-03.png" alt="Melissa Jade">
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Melissa Jade</h4>
+                                    </div>
+                                    <div class="inner__subtitle">
+                                        <span>Designer</span>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="inner__item flex-column">
+                                <div class="inner__img">
+                                    <img src="./assets/images/team-04.png" alt="Greg Mercury">
+                                </div>
+                                <div class="inner__content">
+                                    <div class="inner__title">
+                                        <h4>Greg Mercury</h4>
+                                    </div>
+                                    <div class="inner__subtitle">
+                                        <span>Developer</span>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Features end -->
+    </main>
+    <!-- Main end -->
+
+<!-- jQuery -->
+<script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
+<!-- Slick -->
+<script src="./assets/scripts/Slick/slick.min.js"></script>
+
+<!-- Init -->
+    <script src="./assets/scripts/init.js"></script>
 </body>
 </html>
