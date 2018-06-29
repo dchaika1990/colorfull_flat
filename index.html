@@ -22,7 +22,8 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/css/Material_icons/material-icons.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/styles/css/FontAwesome/fontawesome-all.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">-->
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick-theme.css"/>
@@ -30,6 +31,7 @@
     <!--<link rel="stylesheet" type="text/css" href="css/animate.css"/>-->
     <!-- Main styles -->
     <link rel="stylesheet" href="./assets/styles/css/style.css">
+    <link rel="stylesheet" href="./assets/styles/css/media.css">
     <!--<link rel="stylesheet" href="css/media.css">-->
 </head>
 <body>
@@ -44,23 +46,36 @@
                     </div>
                     <ul class="header__nav d-flex align-items-center">
                         <li>
-                            <a class="active" href="#home">Home</a>
+                            <a class="go_to" href="#home">Home</a>
                         </li>
                         <li class="link__open">
-                            <a href="#about">About</a>
+                            <a class="go_to" href="#about">About</a>
                             <i class="material-icons-keyboard_arrow_down"></i>
+                            <div class="link__drop-down">
+                                <ul>
+                                    <li>
+                                        <a class="go_to" href="#features">Feautures</a>
+                                    </li>
+                                    <li>
+                                        <a class="go_to" href="#advantages">Advantages</a>
+                                    </li>
+                                    <li>
+                                        <a class="go_to" href="#testimonials">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#team">Our Team</a>
+                            <a class="go_to" href="#team">Our Team</a>
                         </li>
                         <li>
-                            <a href="#faq">FAQ</a>
+                            <a class="go_to" href="#faq">FAQ</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
+                            <a class="go_to" href="#blog">Blog</a>
                         </li>
                         <li>
-                            <a href="#partners">Partners</a>
+                            <a class="go_to" href="#partners">Partners</a>
                         </li>
                     </ul>
                     <button class="header__mobile-btn align-items-center" type="button">
@@ -70,22 +85,36 @@
                     </button>
                     <ul class="header__mobile-nav align-items-center">
                         <li>
-                            <a class="active" href="#home">Home</a>
+                            <a class="go_to" href="#home">Home</a>
+                        </li>
+                        <li class="link__open">
+                            <a class="go_to" href="#about">About</a>
+                            <i class="material-icons-keyboard_arrow_down"></i>
+                            <div class="link__drop-down">
+                                <ul>
+                                    <li>
+                                        <a class="go_to" href="#features">Features</a>
+                                    </li>
+                                    <li>
+                                        <a class="go_to" href="#advantages">Advantages</a>
+                                    </li>
+                                    <li>
+                                        <a class="go_to" href="#testimonials">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li>
-                            <a href="#about">About Us</a>
+                            <a class="go_to" href="#team">Our Team</a>
                         </li>
                         <li>
-                            <a href="#team">Our Team</a>
+                            <a class="go_to" href="#faq">FAQ</a>
                         </li>
                         <li>
-                            <a href="#faq">FAQ</a>
+                            <a class="go_to" href="#blog">Blog</a>
                         </li>
                         <li>
-                            <a href="#blog">Blog</a>
-                        </li>
-                        <li>
-                            <a href="#partners">Partners</a>
+                            <a class="go_to" href="#partners">Partners</a>
                         </li>
                     </ul>
                 </div>
@@ -105,7 +134,7 @@
             </div>
             <div class="home__content">
                 <div class="container">
-                    <div class="row d-flex justify-content-center">
+                    <div class="row d-flex justify-content-center flex-column align-items-center">
                         <div class="home__title">
                             <span>The best open page template  for</span>
                             <h2>Web Professionals</h2>
@@ -130,7 +159,7 @@
             <div class="container">
                 <div class="section__title">
                     <div class="row">
-                        <div class="col-12 col-md-10 offset-1 text-center">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
                             <h3>About Us</h3>
                             <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
                         </div>
@@ -209,7 +238,7 @@
             <div class="container">
                 <div class="section__title">
                     <div class="row">
-                        <div class="col-12 col-md-10 offset-1 text-center">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
                             <h3>Features</h3>
                             <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
                         </div>
@@ -280,7 +309,7 @@
             <div class="container">
                 <div class="section__title">
                     <div class="row">
-                        <div class="col-12 col-md-10 offset-1 text-center">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
                             <h3>Advantagess</h3>
                             <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
                         </div>
@@ -419,14 +448,14 @@
             <div class="container">
                 <div class="section__title">
                     <div class="row">
-                        <div class="col-12 col-md-10 offset-1 text-center">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
                             <h3>Testimonials</h3>
                         </div>
                     </div>
                 </div>
                 <div class="section__content">
                     <div class="row d-flex">
-                        <div class="col-12 col-md-8 offset-2">
+                        <div class="col-12 col-md-8 offset-md-2">
                             <div class="slider testimonials__slider">
                                 <div class="inner__item d-flex flex-column align-items-center">
                                     <div class="testimonials__icon d-none d-lg-block">
@@ -470,7 +499,7 @@
             <div class="container">
                 <div class="section__title">
                     <div class="row">
-                        <div class="col-12 col-md-10 offset-1 text-center">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
                             <h3>Our Team</h3>
                         </div>
                     </div>
@@ -554,6 +583,368 @@
             </div>
         </section>
         <!-- Features end -->
+
+        <!-- FAQs start -->
+        <section class="section faq" id="faq" data-speed="10" data-type="background">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
+                            <h3>FAQs</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Tempor incididunt</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Esse cillum</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Eiusmod tempor</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Eiusmod tempor</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Dolore eu fugiat</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Incididunt ut labore</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Incididunt ut labore</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Bulla pariatu</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content accordion">
+                                    <div class="inner__title">
+                                        <h4>Esse cillum</h4>
+                                        <a href="#">
+                                            <i class="material-icons-add_circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQs end -->
+
+        <!-- How start -->
+        <section class="section how" id="how">
+            <div class="container">
+                <div class="section__content">
+                    <div class="row d-flex flex-row-reverse">
+                        <div class="col-lg-6">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content">
+                                    <div class="section__title">
+                                        <h3>How Its Work</h3>
+                                    </div>
+                                    <div class="inner__subtitle">
+                                        <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est.</span>
+                                    </div>
+                                    <div class="inner__text">
+                                        <p>Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans. Ei vide movet tibique ius, eos vivendo consetetur theophrastus cu. Eum erroribus necessitatibus ne. Eius singulis ea his, debitis nonumes at per  appareat ponderum eos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe class="videoframe" width="100%" height="340px" src="https://www.youtube.com/embed/XQN6BZAzZkk?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How end -->
+
+        <!-- Gallery start -->
+        <section class="section gallery">
+            <div class="slider">
+                <div class="inner-item">
+                    <img src="./assets/images/slide-01.jpg" alt="Helping students">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-02.jpg" alt="Web professionals">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-03.jpg" alt="Progress">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-04.jpg" alt="Material theme">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-01.jpg" alt="Helping students">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-01.jpg" alt="Helping students">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-03.jpg" alt="Progress">
+                </div>
+                <div class="inner-item">
+                    <img src="./assets/images/slide-04.jpg" alt="Material theme">
+                </div>
+            </div>
+        </section>
+        <!-- Gallery end -->
+
+        <!-- Latest start -->
+        <section class="section latest" id="blog">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
+                            <h3>Latest From the Blog</h3>
+                            <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item flex-column">
+                                <img src="./assets/images/blog-01.jpg" alt="Post image">
+                                <a href="#" class="inner__content">
+                                    <div class="inner__subtitle">
+                                        <span>2 days ago</span>
+                                    </div>
+                                    <div class="inner__title">
+                                        <h4>No nam conceptam suscipiantur conceptam</h4>
+                                    </div>
+                                    <div class="inner__link">
+                                        <i class="material-icons-open_in_new"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="inner__item flex-column">
+                                <img src="./assets/images/blog-02.jpg" alt="Post image">
+                                <a href="#" class="inner__content">
+                                    <div class="inner__subtitle">
+                                        <span>2 days ago</span>
+                                    </div>
+                                    <div class="inner__title">
+                                        <h4>No nam conceptam suscipiantur conceptam</h4>
+                                    </div>
+                                    <div class="inner__link">
+                                        <i class="material-icons-open_in_new"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest end -->
+
+        <!-- Partners start -->
+        <section class="section partners" id="partners">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
+                            <h3>Our partners</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row">
+                        <div class="col-10 offset-1 d-flex">
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="inner__item">
+                                        <img src="./assets/images/templatemonster.png" alt="Post image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="inner__item">
+                                        <img src="./assets/images/motocms.png" alt="Post image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="inner__item">
+                                        <img src="./assets/images/templatetuning.png" alt="Post image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners end -->
+
+        <!-- Contact start -->
+        <footer class="section contact" id="contact">
+            <div class="container">
+                <div class="section__title">
+                    <div class="row">
+                        <div class="col-12 col-md-10 offset-md-1 text-center">
+                            <h3>Contact us</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="row d-flex">
+                        <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+                            <div class="inner__item flex-column">
+                                <div class="inner__content">
+                                    <div class="inner__text">
+                                        <p>8901 Marmora Road, Glasgow, D04 89GR. Telephone:  +1 800 603 6035</p>
+                                    </div>
+                                    <ul class="inner__soc-btn d-flex">
+                                        <li>
+                                            <a href="#" class="facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="twitter">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="google">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="inner__subtitle">
+                                        <span>Colorful Flat © 2015. All Rights Reserved</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Contact end -->
+
+        <!-- Map start -->
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4578.668189214503!2d31.96780729792798!3d46.97166252469866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c5c9147dc0f8a1%3A0x2125882a4e090c7c!2z0LLRg9C70LjRhtGPINCo0L7RgdC10LnQvdCwLCAxNNCQLCDQnNC40LrQvtC70LDRl9CyLCDQnNC40LrQvtC70LDRl9Cy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDU0MDAw!5e0!3m2!1sru!2sua!4v1530268674722" width="100%" height="440" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="section__shadow"></div>
+        </section>
+        <!-- Map end -->
+
+        <!-- Modal start -->
+        <div class="overlay"></div>
+        <div class="modal">
+
+        </div>
+        <!-- Modal end -->
     </main>
     <!-- Main end -->
 
@@ -563,6 +954,6 @@
 <script src="./assets/scripts/Slick/slick.min.js"></script>
 
 <!-- Init -->
-    <script src="./assets/scripts/init.js"></script>
+<script src="./assets/scripts/init.js"></script>
 </body>
 </html>
