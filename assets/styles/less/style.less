@@ -163,7 +163,11 @@ label{
 }
 
 .btn-primary{
-  background-color: @colorBlue;
+  background-color: @colorBtn;
+
+  &:hover{
+    background-color: @colorBtnHover;
+  }
 }
 
 .section{
@@ -428,7 +432,13 @@ ul.slick-dots{
     background-color: @bkgGrey;
     border-radius: 5px;
     max-width: 370px;
+
+    .btn.mobile{
+      display: none;
+    }
   }
+
+
 }
 
 //About start

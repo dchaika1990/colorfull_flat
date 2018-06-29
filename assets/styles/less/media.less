@@ -4,6 +4,10 @@
   }
 
   .header{
+    &__navbar{
+      padding: 30px;
+    }
+
     &__logo{
       font-size: 40px;
     }
@@ -15,6 +19,10 @@
         margin-left: 40px;
       }
     }
+
+    .link__drop-down{
+      top: 79px;
+    }
   }
 
   .home{
@@ -23,11 +31,17 @@
     &__title{
       span{
         font-size: 25px;
+        line-height: 25px;
       }
 
       h2{
         font-size: 80px;
+        line-height: 90px;
       }
+    }
+
+    &__form{
+      margin-top: 15px;
     }
 
     .video-bck{
@@ -41,14 +55,67 @@
     }
   }
 
-  .header{
-    &__navbar{
-      padding: 40px;
+  .inner{
+    &__title{
+      font-size: 22px;
     }
   }
 
-  .inner__title{
-    font-size: 22px;
+  .icon__circle{
+    width: 80px;
+    height: 80px;
+  }
+
+  .about .inner__icon i{
+    font-size: 45px;
+
+  }
+}
+
+@media (max-width: 1280px) {
+  .features{
+    .rectangles{
+      width: 210px;
+    }
+    &__image{
+      left: 0;
+    }
+  }
+
+  .home{
+    &__form{
+      width: 100%;
+      max-width: 100%;
+      display: none;
+
+      &.show{
+        display: block;
+      }
+    }
+
+    .form-group{
+      display: flex;
+
+      .form-control + .form-control{
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+
+    .btn.mobile{
+      display: block;
+      width: auto;
+    }
+
+    &__title{
+      span{
+        font-size: 25px;
+      }
+
+      h2{
+        font-size: 80px;
+      }
+    }
   }
 }
 
@@ -79,29 +146,6 @@
     right: -15px;
   }
 
-  .home{
-
-  }
-
-  .home__form{
-    margin-top: 0;
-    background-color: transparent;
-    padding: 0;
-
-    .form-group{
-      display: none;
-    }
-  }
-
-  .home__title{
-    span{
-      font-size: 25px;
-    }
-
-    h2{
-      font-size: 80px;
-    }
-  }
 
   .section__title{
     h3{

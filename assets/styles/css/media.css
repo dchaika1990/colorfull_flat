@@ -2,6 +2,9 @@
   body {
     font-size: 18px;
   }
+  .header__navbar {
+    padding: 30px;
+  }
   .header__logo {
     font-size: 40px;
   }
@@ -11,14 +14,22 @@
   .header__nav li + li {
     margin-left: 40px;
   }
+  .header .link__drop-down {
+    top: 79px;
+  }
   .home {
     height: auto;
   }
   .home__title span {
     font-size: 25px;
+    line-height: 25px;
   }
   .home__title h2 {
     font-size: 80px;
+    line-height: 90px;
+  }
+  .home__form {
+    margin-top: 15px;
   }
   .home .video-bck {
     margin-bottom: -10px;
@@ -26,11 +37,51 @@
   .section__title h3 {
     font-size: 40px;
   }
-  .header__navbar {
-    padding: 40px;
-  }
   .inner__title {
     font-size: 22px;
+  }
+  .icon__circle {
+    width: 80px;
+    height: 80px;
+  }
+  .about .inner__icon i {
+    font-size: 45px;
+  }
+}
+@media (max-width: 1280px) {
+  .features .rectangles {
+    width: 210px;
+  }
+  .features__image {
+    left: 0;
+  }
+  .home__form {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+  }
+  .home__form.show {
+    display: block;
+  }
+  .home .form-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .home .form-group .form-control + .form-control {
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  .home .btn.mobile {
+    display: block;
+    width: auto;
+  }
+  .home__title span {
+    font-size: 25px;
+  }
+  .home__title h2 {
+    font-size: 80px;
   }
 }
 @media (max-width: 1024px) {
@@ -51,20 +102,6 @@
   }
   .link__open i {
     right: -15px;
-  }
-  .home__form {
-    margin-top: 0;
-    background-color: transparent;
-    padding: 0;
-  }
-  .home__form .form-group {
-    display: none;
-  }
-  .home__title span {
-    font-size: 25px;
-  }
-  .home__title h2 {
-    font-size: 80px;
   }
   .section__title h3 {
     font-size: 40px;

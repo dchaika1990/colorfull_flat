@@ -122,4 +122,10 @@ $(document).ready(function () {
         return false;
     });
 
+    //Btn mobile show form
+    $('.btn.mobile').on('click', function () {
+       $('.home .home__form').addClass('show');
+       $(this).hide();
+    });
+
 });
