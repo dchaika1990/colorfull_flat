@@ -264,6 +264,7 @@ ul.slick-dots li button::before {
 .btn-up {
   opacity: 0;
   position: fixed;
+  z-index: 20;
   right: -50px;
   bottom: 15px;
   height: 45px;
