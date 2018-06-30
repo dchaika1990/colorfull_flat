@@ -132,6 +132,7 @@ label {
 }
 .section {
   padding: 120px 0;
+  overflow: hidden;
 }
 .section__title h3 {
   font-size: 45px;
@@ -305,6 +306,9 @@ ul.slick-dots li button::before {
 }
 .text-center {
   text-align: center;
+}
+main {
+  width: 100%;
 }
 .header {
   width: 100%;

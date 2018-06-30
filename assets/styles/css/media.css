@@ -182,26 +182,18 @@
     width: 42px;
     height: 32px;
     background-color: transparent;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    padding: 5px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .header__mobile-btn span {
-    width: 22px;
-    height: 2px;
-    background-color: #8b8e94;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-transition: all .3s linear;
-    transition: all .3s linear;
+  .header__mobile-btn i {
+    font-size: 22px;
+    line-height: 22px;
   }
   .header__mobile-nav {
     display: none;
