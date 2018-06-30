@@ -3,18 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Colorful Flat</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="The best open page template for Web Professionals">
     <meta name="keywords" content="open, page, template, web, professional">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <!--<link rel="icon" href="img/favicon.png" type="image/x-icon">-->
-    <!--<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">-->
-    <!-- OG-метки -->
-    <meta property="og:title" content="Colorful Flat">
-    <meta property="og:description" content="The best open page template for Web Professionals">
-    <meta property="og:type" content="article">
-    <meta property="og:image" content="img/first-screen.jpg">
-    <meta property="og:site_name" content="Colorful Flat">
 
     <!-- Styles -->
     <!-- Bootstrap -->
@@ -28,11 +20,11 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/css/Slick/slick-theme.css"/>
     <!-- Animate -->
-    <!--<link rel="stylesheet" type="text/css" href="css/animate.css"/>-->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/css/Revealator/fm.revealator.jquery.css"/>
     <!-- Main styles -->
     <link rel="stylesheet" href="./assets/styles/css/style.css">
     <link rel="stylesheet" href="./assets/styles/css/media.css">
-    <!--<link rel="stylesheet" href="css/media.css">-->
+
 </head>
 <body>
     <!-- Header start -->
@@ -44,7 +36,7 @@
                         <span class="black-font">colorful</span>
                         <span class="light-font"> flat</span>
                     </div>
-                    <ul class="header__nav d-flex align-items-center">
+                    <ul class="header__nav align-items-center">
                         <li>
                             <a class="go_to" href="#home">Home</a>
                         </li>
@@ -88,21 +80,20 @@
                             <a class="go_to" href="#home">Home</a>
                         </li>
                         <li class="link__open">
-                            <a class="go_to" href="#about">About</a>
-                            <i class="material-icons-keyboard_arrow_down"></i>
-                            <div class="link__drop-down">
-                                <ul>
-                                    <li>
-                                        <a class="go_to" href="#features">Features</a>
-                                    </li>
-                                    <li>
-                                        <a class="go_to" href="#advantages">Advantages</a>
-                                    </li>
-                                    <li>
-                                        <a class="go_to" href="#testimonials">Testimonials</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <a class="go_to" href="#about">About
+                                <i class="material-icons-keyboard_arrow_down"></i>
+                            </a>
+                            <ul class="link__drop-down">
+                                <li>
+                                    <a class="go_to" href="#features">Features</a>
+                                </li>
+                                <li>
+                                    <a class="go_to" href="#advantages">Advantages</a>
+                                </li>
+                                <li>
+                                    <a class="go_to" href="#testimonials">Testimonials</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a class="go_to" href="#team">Our Team</a>
@@ -155,6 +146,24 @@
             </div>
         </div>
         <!-- Home end -->
+        <section class="form-block">
+            <div class="home__content-mobile">
+                <div class="container">
+                    <div class="row d-flex justify-content-center flex-column align-items-center">
+                        <div class="home__form">
+                            <form>
+                                <div class="form-group">
+                                    <input class="form-control" type="text" placeholder="Full name">
+                                    <input class="form-control" type="text" placeholder="E-mail">
+                                    <input class="form-control" type="text" placeholder="Phone">
+                                </div>
+                                <button class="btn btn-primary" type="submit">Get started now!</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- About start -->
         <section class="about section" id="about">
             <div class="container">
@@ -169,7 +178,7 @@
                 <div class="section__content">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <i class="material-icons-comment"></i>
                                 </div>
@@ -184,7 +193,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideright revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <i class="material-icons-verified_user"></i>
                                 </div>
@@ -199,7 +208,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <i class="material-icons-autorenew"></i>
                                 </div>
@@ -214,7 +223,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideright revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <i class="material-icons-headset_mic"></i>
                                 </div>
@@ -233,7 +242,6 @@
             </div>
         </section>
         <!-- About end -->
-
         <!-- Features start -->
         <section class="section features" id="features">
             <div class="container">
@@ -248,7 +256,7 @@
                 <div class="section__content">
                     <div class="row d-flex flex-column">
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-rotateleft revealator-once">
                                 <div class="inner__icon">
                                     <i class="material-icons-tune"></i>
                                 </div>
@@ -263,7 +271,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-rotateleft revealator-once">
                                 <div class="inner__icon">
                                     <i class="material-icons-dvr"></i>
                                 </div>
@@ -278,7 +286,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-8 col-lg-6">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-rotateleft revealator-once">
                                 <div class="inner__icon">
                                     <i class="material-icons-devices"></i>
                                 </div>
@@ -311,7 +319,7 @@
                 <div class="section__title">
                     <div class="row">
                         <div class="col-12 col-md-10 offset-md-1 text-center">
-                            <h3>Advantagess</h3>
+                            <h3>Advantages</h3>
                             <span>Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.</span>
                         </div>
                     </div>
@@ -319,7 +327,7 @@
                 <div class="section__content">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>1.</span>
                                 </div>
@@ -334,7 +342,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>2.</span>
                                 </div>
@@ -349,7 +357,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>3.</span>
                                 </div>
@@ -364,7 +372,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>4.</span>
                                 </div>
@@ -379,7 +387,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>5.</span>
                                 </div>
@@ -394,7 +402,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>6.</span>
                                 </div>
@@ -409,7 +417,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>7.</span>
                                 </div>
@@ -424,7 +432,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item">
+                            <div class="inner__item revealator-slideleft revealator-once">
                                 <div class="inner__icon icon__circle">
                                     <span>8.</span>
                                 </div>
@@ -495,7 +503,7 @@
         </section>
         <!-- Testimonials end -->
 
-        <!-- Features start -->
+        <!-- Team start -->
         <section class="section team" id="team">
             <div class="container">
                 <div class="section__title">
@@ -508,7 +516,7 @@
                 <div class="section__content">
                     <div class="row d-flex">
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item flex-column">
+                            <div class="inner__item flex-column revealator-zoomin revealator-once">
                                 <div class="inner__img">
                                     <img src="./assets/images/team-01.png" alt="Alan Sobakovich">
                                 </div>
@@ -526,7 +534,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item flex-column">
+                            <div class="inner__item flex-column revealator-zoomin revealator-once">
                                 <div class="inner__img">
                                     <img src="./assets/images/team-02.png" alt="John Mu">
                                 </div>
@@ -544,7 +552,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item flex-column">
+                            <div class="inner__item flex-column revealator-zoomin revealator-once">
                                 <div class="inner__img">
                                     <img src="./assets/images/team-03.png" alt="Melissa Jade">
                                 </div>
@@ -562,7 +570,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-3">
-                            <div class="inner__item flex-column">
+                            <div class="inner__item flex-column revealator-zoomin revealator-once">
                                 <div class="inner__img">
                                     <img src="./assets/images/team-04.png" alt="Greg Mercury">
                                 </div>
@@ -583,10 +591,10 @@
                 </div>
             </div>
         </section>
-        <!-- Features end -->
+        <!-- Team end -->
 
         <!-- FAQs start -->
-        <section class="section faq" id="faq" data-speed="10" data-type="background">
+        <section class="section faq" id="faq" data-speed="100" data-type="background">
             <div class="container">
                 <div class="section__title">
                     <div class="row">
@@ -862,7 +870,7 @@
                 <div class="section__content">
                     <div class="row">
                         <div class="col-12 col-md-10 offset-md-1 d-flex">
-                            <div class="row">
+                            <div class="row d-flex justify-content-center">
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="inner__item">
                                         <img src="./assets/images/templatemonster.png" alt="Post image">
@@ -940,11 +948,15 @@
         </section>
         <!-- Map end -->
 
+        <!-- Btn up start -->
+        <div class="btn-up">
+            <i class="material-icons-arrow_drop_up"></i>
+        </div>
+        <!-- Btn up end -->
+
         <!-- Modal start -->
         <div class="overlay"></div>
-        <div class="modal">
-
-        </div>
+        <div class="modal"></div>
         <!-- Modal end -->
     </main>
     <!-- Main end -->
@@ -953,7 +965,8 @@
 <script src="./assets/scripts/jQuery/jquery-3.3.1.min.js"></script>
 <!-- Slick -->
 <script src="./assets/scripts/Slick/slick.min.js"></script>
-
+<!-- Animate -->
+<script src="./assets/scripts/Revealator/fm.revealator.jquery.js"></script>
 <!-- Init -->
 <script src="./assets/scripts/init.js"></script>
 </body>

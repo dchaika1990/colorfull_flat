@@ -88,6 +88,10 @@
   body {
     font-size: 18px;
   }
+  .header__navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   .header__logo {
     font-size: 25px;
   }
@@ -97,16 +101,214 @@
   .header__nav li + li {
     margin-left: 35px;
   }
-  .header__navbar {
-    padding: 25px 30px;
+  .header .link__drop-down {
+    top: 63px;
+    padding: 10px 20px;
   }
-  .link__open i {
+  .header .link__drop-down li a {
+    font-size: 15px;
+  }
+  .header .link__open i {
     right: -15px;
+  }
+  .header.scrolled .header__navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header.scrolled .header__navbar .link__drop-down {
+    top: 57px;
+  }
+  .home__title span {
+    font-size: 22px;
+  }
+  .home__title h2 {
+    font-size: 65px;
+  }
+  .home__form {
+    padding: 20px;
+  }
+  .form-group {
+    margin-bottom: 15px;
+  }
+  .btn {
+    padding: 10px;
+  }
+  .form-control {
+    padding: 10px;
   }
   .section__title h3 {
     font-size: 40px;
   }
   .inner__title {
     font-size: 22px;
+  }
+  .about .inner__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .about .inner__icon {
+    margin-right: 0;
+  }
+  .how .inner__content {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .header__navbar {
+    position: relative;
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .header__logo {
+    color: #333;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__mobile-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 42px;
+    height: 32px;
+    background-color: transparent;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    padding: 5px;
+  }
+  .header__mobile-btn span {
+    width: 22px;
+    height: 2px;
+    background-color: #8b8e94;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+  .header__mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 10px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+  }
+  .header__mobile-nav li {
+    width: 100%;
+  }
+  .header__mobile-nav li a {
+    padding: 15px;
+    color: #333;
+    width: 100%;
+    line-height: 15px;
+  }
+  .header__mobile-nav li + li {
+    margin-left: 0;
+  }
+  .header .link__drop-down {
+    position: initial;
+  }
+  .header .link__drop-down li a {
+    font-size: 18px;
+  }
+  .header .link__open a {
+    position: relative;
+  }
+  .header li:hover > a {
+    color: #5dbdfe;
+  }
+  .home {
+    padding-top: 60px;
+  }
+  .home .btn.mobile {
+    display: none;
+  }
+  .features .inner__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .inner__icon {
+    margin-right: 0;
+  }
+  .form-block {
+    display: block;
+    margin-top: 30px;
+  }
+  .form-block .home__form {
+    margin-top: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .faq i {
+    font-size: 30px;
+  }
+  .faq .inner__title,
+  .faq .inner__text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 424px) {
+  body {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .header__mobile-nav a,
+  .header__mobile-nav .link__drop-down li a {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .home__title span {
+    font-size: 20px;
+  }
+  .home__title h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .section__title h3 {
+    font-size: 30px;
+  }
+  .modal {
+    width: 100%;
   }
 }

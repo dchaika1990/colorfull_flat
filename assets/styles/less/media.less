@@ -1,3 +1,36 @@
+//VARIABLES START
+@fontFamily: 'Lato', sans-serif;
+@colorBlack: #333;
+@colorWhite: #fff;
+@colorBlue: #5dbdfe;
+@colorGrey: #cbcbcb;
+
+@colorBtn: #5dbdfe;
+@colorBtnHover: #4a93c4;
+
+@colorLink: inherit;
+@colorLinkHover: #5dbdfe;
+
+@fontSizeBody: 20px;
+@fontSizeTitle: 45px;
+@fontSizeNav: 24px;
+@fontSizeLogo: 62px;
+
+@lineHeightBody: 34px;
+
+@fontWeightLite: 300;
+@fontWeightRegular: 400;
+@fontWeightBold: 700;
+@fontWeightBlack: 900;
+
+@bkgWhite: #fff;
+@bkgGrey: #f1f1f1;
+@bkgRed: #f34235;
+
+@bkgIcon: #5dbdfe;
+// END ---- VARIABLES
+
+
 @media (max-width: 1440px) {
   body{
     font-size: 18px;
@@ -125,6 +158,11 @@
   }
 
   .header{
+    &__navbar{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
     &__logo{
       font-size: 25px;
     }
@@ -137,15 +175,61 @@
       }
     }
 
-    &__navbar{
-      padding: 25px 30px;
+    .link{
+      &__drop-down{
+        top: 63px;
+        padding: 10px 20px;
+
+        li a{
+          font-size: 15px;
+        }
+      }
+
+      &__open i{
+        right: -15px;
+      }
+    }
+
+    &.scrolled{
+      .header__navbar{
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .link{
+          &__drop-down{
+            top: 57px;
+          }
+        }
+      }
     }
   }
 
-  .link__open i{
-    right: -15px;
+  .home{
+    &__title{
+      span{
+        font-size: 22px;
+      }
+      h2{
+        font-size: 65px;
+      }
+    }
+
+    &__form{
+      padding: 20px;
+    }
   }
 
+  .form-group{
+    margin-bottom: 15px;
+  }
+
+  .btn{
+    padding: 10px;
+  }
+
+  .form-control{
+    padding: 10px;
+  }
 
   .section__title{
     h3{
@@ -155,5 +239,199 @@
 
   .inner__title{
     font-size: 22px;
+  }
+
+  .about{
+    .inner{
+      &__item{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      &__icon{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .how{
+    .inner{
+      &__content{
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header{
+    &__navbar{
+      position: relative;
+      background-color: @colorWhite;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    &__logo{
+      color: @colorBlack;
+    }
+    &__nav{
+      display: none;
+    }
+    &__mobile-btn{
+      display: flex;
+      width: 42px;
+      height: 32px;
+      background-color: transparent;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 5px;
+
+      span{
+        width: 22px;
+        height: 2px;
+        background-color: rgb(139, 142, 148);
+        display: flex;
+        transition: all .3s linear;
+      }
+    }
+    &__mobile-nav{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-transform: uppercase;
+      background-color: #fff;
+      padding: 10px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+
+      li{
+        width: 100%;
+
+        a{
+          padding: 15px;
+          color: @colorBlack;
+          width: 100%;
+          line-height: 15px;
+        }
+
+        & + li{
+          margin-left: 0;
+        }
+      }
+    }
+
+    .link{
+      &__drop-down{
+        position: initial;
+
+        li{
+          a{
+            font-size: 18px;
+          }
+        }
+      }
+
+      &__open{
+        a{
+          position: relative;
+        }
+      }
+    }
+
+    li:hover > a{
+      color: @colorBlue;
+    }
+  }
+
+  .home{
+    padding-top: 60px;
+
+    .btn.mobile{
+      display: none;
+    }
+  }
+
+  .features{
+    .inner{
+      &__item{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+
+      &__icon{
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form-block{
+    display: block;
+    margin-top: 30px;
+
+    .home__form{
+      margin-top: 0;
+      display: flex;
+    }
+  }
+
+  .faq{
+    i{
+      font-size: 30px;
+    }
+    .inner{
+      &__title,
+      &__text{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 424px) {
+  body{
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .header{
+    &__mobile-nav{
+      a,
+      .link__drop-down li a{
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+  }
+
+  .home{
+    &__title{
+      span{
+        font-size: 20px;
+      }
+      h2{
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .section{
+    padding: 80px 0;
+
+    &__title{
+      h3{
+        font-size: 30px;
+      }
+    }
+  }
+
+  .modal{
+    width: 100%;
   }
 }
